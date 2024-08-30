@@ -1,0 +1,82 @@
+.navbar1 {
+  position: fixed;
+  top: 0;
+  left: 230px;
+  width: calc(100% - 230px);
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.left{
+  padding-right: 930px;
+}
+.nav-left {
+  display: flex;
+  padding-top: 10px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.nav-button:focus {
+  outline: none;
+}
+
+.notification-button {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0 5px;
+  font-size: 0.8rem;
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-label {
+  color: black;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.dropdown-icon {
+  color: black;
+  font-size: 0.8rem;
+}

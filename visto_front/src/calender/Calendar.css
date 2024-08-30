@@ -1,0 +1,32 @@
+/* Example for styling the calendar container */
+.js-calendar {
+    background-color: #f0f0f0 !important; /* Background color for the entire calendar */
+  }
+  
+  /* Style the header (month and year) */
+  .js-calendar .calendar-header {
+    background-color: #4069e5 !important; /* Background color for the header */
+    color: #ffffff !important; /* Text color for the header */
+  }
+  
+  /* Style the months */
+  .js-calendar .calendar-months {
+    color: #4069e5 !important; /* Text color for the month names */
+  }
+  
+  /* Style the days */
+  .js-calendar .calendar-days {
+    color: #333333 !important; /* Text color for the day numbers */
+  }
+  
+  /* Style the selected day */
+  .js-calendar .calendar-day.selected {
+    background-color: #9cb9f4 !important; /* Background color for the selected day */
+    color: #ffffff !important; /* Text color for the selected day */
+  }
+  
+  /* Style the disabled days */
+  .js-calendar .calendar-day.disabled {
+    color: #c4c4c4 !important; /* Text color for disabled days */
+  }
+  

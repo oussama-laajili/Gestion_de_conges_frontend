@@ -1,0 +1,176 @@
+.team-container {
+  padding-left: 20px; /* Width of the vertical navbar */
+  position: fixed;
+  top: 60px;
+  left: 230px; /* Position content after the navbar */
+  width: calc(100% - 230px); /* Adjust width for remaining space */
+  height: 100%;
+  background-color: #F2F3F4;
+  overflow-y: auto; /* Add scrollbar if content exceeds */
+  padding-top: 5px; /* Example padding */
+  transition: left 0.3s ease, width 0.3s ease; /* Smooth transition for width */
+}
+
+.team-container.collapsed {
+  left: 60px; /* Adjust left position for collapsed state */
+  width: calc(100% - 60px); /* Adjust width for remaining space in collapsed state */
+}
+
+.team-container.dark-mode {
+  background-color: #0f0f12;
+}
+
+.team-container.dark-mode.collapsed {
+  left: 60px; /* Adjust left position for collapsed state */
+  width: calc(100% - 60px); /* Adjust width for remaining space in collapsed state */
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjusted gap to avoid excessive space */
+  margin-bottom: 20px;
+}
+
+.search-container .search-input,
+.search-container .department-select {
+  display: flex;
+  background-color: #e5e7e8;
+  justify-content: left;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  color: black;
+}
+
+.search-container .search-input.dark-mode,
+.search-container .department-select.dark-mode {
+  background-color: #17191a;
+  color: white;
+}
+
+.search-container .search-input::placeholder,
+.search-container .department-select::placeholder {
+  color: black;
+}
+
+.search-container .search-input.dark-mode::placeholder,
+.search-container .department-select.dark-mode::placeholder {
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.page-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e5e7e8;
+  color: black;
+  cursor: pointer;
+}
+
+.page-btn.active {
+  background-color: #9fbbf1; /* Highlight active page */
+}
+.employee-table {
+  width: 100%; /* Ensure the table takes full width of its container */
+  border-collapse: collapse; /* Optional: to remove spacing between cells */
+}
+
+.employee-table th,
+.employee-table td {
+  width: 150px; /* Fixed width for all cells */
+  text-align: left; /* Align text to the left */
+}
+
+/* Optional: Adjust width for specific columns */
+.employee-table th:first-child,
+.employee-table td:first-child {
+  width: 100px; /* Example for the first column */
+}
+
+.employee-table th:nth-child(2),
+.employee-table td:nth-child(2) {
+  width: 200px; /* Example for the second column */
+}
+
+/* Ensure that column widths are applied consistently */
+.employee-table th,
+.employee-table td {
+  padding: 10px;
+}
+
+
+.employee-photo {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.employee-card {
+  background-color: #e5e7e8;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+}
+
+.employee-card.dark-mode {
+  background-color: #17191a;
+  color: white;
+}
+
+.view-profile-btn,
+.delete-profile-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 45%;
+}
+
+.view-profile-btn {
+  background-color: #F2F3F4;
+  color: black;
+}
+
+.view-profile-btn.dark-mode {
+  background-color: #0f0f12;
+  color: white;
+}
+
+.delete-profile-btn {
+  background-color: #F2F3F4;
+  color: black;
+}
+
+.delete-profile-btn.dark-mode {
+  background-color: #0f0f12;
+  color: white;
+}
+
+/* Optional custom scrollbar styles */
+.team-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.team-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.team-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.team-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

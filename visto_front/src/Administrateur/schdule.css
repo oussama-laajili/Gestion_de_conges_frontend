@@ -1,0 +1,81 @@
+.calendar-container {
+    padding-left: 20px; /* Width of the vertical navbar */
+    position: fixed;
+    top: 100px;
+    left: 230px; /* Position content after the navbar */
+    width: calc(100% - 200px); /* Adjust width for remaining space */
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto; /* Add if you want scrollbar if content exceeds */
+    padding-top: 5px; /* Example padding */
+    padding-bottom: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Adjust shadow as needed */
+
+}
+
+.legend-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the heading and legend items horizontally */
+    width: 100%; /* Ensure it takes full width */
+    margin-top: 460px;
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+    justify-content: center; /* Center legend items horizontally */
+    margin-top: 10px; /* Adjust space between h2 and legend items */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 15px; /* Adjust spacing between items as needed */
+}
+
+.legend-color {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.legend-name {
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Center the h2 heading */
+.legend-container h2 {
+    text-align: center;
+    width: 100%; /* Make sure it takes full width to be centered */
+    margin: 0 auto 10px; /* Center the h2 and add space below */
+}
+
+
+
+
+/* schdule.css */
+
+/* Add styles for the modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}

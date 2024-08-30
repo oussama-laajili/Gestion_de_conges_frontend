@@ -1,0 +1,36 @@
+
+
+.leave-balance {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 97.5%;
+  border: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+}
+
+.leave-balance h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.balance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-left: 22%;
+}
+
+.balance-item {
+  background-color: #eaf4ff;
+  border: 1px solid #d0e1f9;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.balance-item br {
+  display: none;
+}

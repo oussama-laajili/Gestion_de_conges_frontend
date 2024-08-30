@@ -1,0 +1,12 @@
+#scheduler {
+  height: 720px;
+  padding: 20px;
+  background-color: #F2F3F4;
+}
+
+.App {
+  position: fixed;
+  left: 230px;
+  top: 60px;
+  
+}

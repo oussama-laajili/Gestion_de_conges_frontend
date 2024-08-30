@@ -1,0 +1,259 @@
+.dashboard {
+    padding-left: 20px; /* Width of the vertical navbar */
+    position: fixed;
+    top: 60px;
+    left: 230px; /* Position content after the navbar */
+    width: calc(100% - 230px); /* Adjust width for remaining space */
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto; /* Add if you want scrollbar if content exceeds */
+    padding-top: 5px; /* Example padding */
+    transition: left 0.3s ease, width 0.3s ease; /* Smooth transition for width */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Adjust shadow as needed */
+
+}
+.dashboard.dark-mode {
+    /* Dark mode styles */
+    background-color: #0f0f12;
+    color: #ffffff;
+    /* Adjust other styles as needed */
+  }
+
+.dashboard.collapsed {
+    left: 60px; /* Adjust left position for collapsed state */
+    width: calc(100% - 60px); /* Adjust width for remaining space in collapsed state */
+}
+
+.title {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+.dashboard-section.dark-mode{
+    background-color: #17191a; /* Light gray background */
+    color: white; /* Text color */
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    border-radius: 8px;
+    display: inline-block; /* Display inline to align horizontally */
+    width: calc(25% - 40px); /* Adjust width for each section */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align to the top */
+    text-align: center; /* Center align text */
+}
+.dashboard-section {
+    background-color: #e5e7e8; /* Light gray background */
+    color: black; /* Text color */
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    border-radius: 8px;
+    display: inline-block; /* Display inline to align horizontally */
+    width: calc(25% - 40px); /* Adjust width for each section */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align to the top */
+    text-align: center; /* Center align text */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    border-left: 5px solid #4069e5; /* Add blue border on the left */
+}
+.inlinesss {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    text-align: center; /* Center text inside the items */
+}
+.dashboard-section1.dark-mode {
+    background-color: #17191a; /* Dark background for dark mode */
+    color: white; /* Text color for dark mode */
+    padding: 20px;
+    margin: 5px;
+    margin-left: 300px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center align text */
+    width: 264px; /* Adjust width for each section */
+    height: 31.5%; /* Adjust height for smaller size */
+}
+
+.dashboard-section1 {
+    background-color: #e5e7e8; /* Light gray background */
+    color: black; /* Text color */
+    padding: 20px;
+    margin: 5px;
+    margin-left: 300px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center align text */
+    width: 264px; /* Adjust width for each section */
+    height: 31.5%; /* Adjust height for smaller size */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    border-left: 5px solid #4069e5; /* Add blue border on the left */
+}
+
+.dashboard-section1.collapsed{
+    margin-left: 345px;
+    width: 309px; /* Adjust width for each section */
+}
+.dashboard-section2.dark-mode{
+    background-color: #17191a; /* Light gray background */
+    color: white; /* Text color */
+    padding: 20px;
+    padding-top: 40px;
+    margin: 5px;
+    margin-left: 20px;
+    border-radius: 8px;
+    display: inline-block; /* Display inline to align horizontally */
+    width: 845px; /* Adjust width for each section */  
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align to the top */
+    text-align: center; /* Center align text */
+
+}
+.dashboard-section2.collapsed{
+    width: 972px;
+}
+.dashboard-section2 {
+    background-color: #e5e7e8; /* Light gray background */
+    color: black; /* Text color */
+    padding: 20px;
+    padding-top: 40px;
+    margin: 5px;
+    margin-left: 20px;
+    border-radius: 8px;
+    display: inline-block; /* Display inline to align horizontally */
+    width: 845px; /* Adjust width for each section */  
+    height: 530px;  
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align to the top */
+    text-align: center; /* Center align text */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    border-left: 5px solid #4069e5; /* Add blue border on the left */
+}
+
+.dashboard-section3.dark-mode {
+    background-color: #0f0f12; /* Dark background for dark mode */
+    color: white; /* Text color for dark mode */
+    padding: 20px;
+    margin: 5px;
+    margin-left: 300px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center align text */
+    width: 264px; /* Adjust width for each section */
+    height: 31.5%; /* Adjust height for smaller size */
+}
+
+.dashboard-section3 {
+    background-color: #fff; /* Light gray background */
+    color: black; /* Text color */
+    padding: 20px;
+    margin: 5px;
+    margin-left: 300px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center align text */
+    width: 264px; /* Adjust width for each section */
+    height: 31.5%; /* Adjust height for smaller size */
+}
+
+.employee-number {
+    margin-top: 5px;
+    color: black;
+}
+.color.dark-mode{
+    color: white;
+
+}
+.color{
+    color: black;
+    font-weight: lighter;
+    font-size:large;
+    padding-right: 10%;
+}
+.as{
+    display: flex;
+}
+.asz{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust the gap between the charts as needed */
+    width: 48.3%;
+}
+
+
+
+
+
+
+
+
+.dashboard-section5 {
+    background-color: #e5e7e8; /* Light gray background */
+    color: black; /* Text color */
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    border-radius: 8px;
+    display: inline-block; /* Display inline to align horizontally */
+    width: calc(25% - 40px); /* Adjust width for each section */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align to the top */
+    text-align: center; /* Center align text */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    border-left: 5px solid #4069e5; /* Add blue border on the left */
+}
+
+.dashboard-section5.collapsed {
+    background-color: #e5e7e8; /* Light gray background */
+    color: black; /* Text color */
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    border-radius: 8px;
+    display: inline-block; /* Display inline to align horizontally */
+    width: 165px; /* Adjust width for each section */
+    height: 135px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align to the top */
+    text-align: center; /* Center align text */
+}
+.dashboard-section6 {
+    background-color: #e5e7e8; /* Light gray background */
+    color: black; /* Text color */
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    border-radius: 8px;
+    display: inline-block; /* Display inline to align horizontally */
+    width: calc(25% - 40px); /* Adjust width for each section */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align to the top */
+    text-align: center; /* Center align text */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    border-left: 5px solid green; /* Add blue border on the left */
+}
+
+.dashboard-section6.collapsed {
+    background-color: #e5e7e8; /* Light gray background */
+    color: black; /* Text color */
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    border-radius: 8px;
+    display: inline-block; /* Display inline to align horizontally */
+    width: 165px; /* Adjust width for each section */
+    height: 135px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align to the top */
+    text-align: center; /* Center align text */
+}
+.employee-number {
+    font-size: 50px; /* Smaller font size for the numbers */
+    font-weight: bold;
+    margin-top: 5px;
+    color: black;
+    
+}

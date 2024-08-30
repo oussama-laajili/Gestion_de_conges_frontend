@@ -1,0 +1,381 @@
+body.dark-mode {
+  background-color: #17191a;
+  color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+
+}
+
+body.dark-mode .navbar {
+  background-color: #17191a;
+  color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+
+}
+
+body.dark-mode .navbar1 {
+  background-color: #0f0f12;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+.delete-button{
+  background-color: transparent;
+}
+.delete-button.dark-mode{
+  background-color: transparent;
+}
+
+body.dark-mode .nav-item {
+  color: #ffffff;
+  background-color: #17191a;
+}
+
+body.dark-mode .nav-item:hover,
+body.dark-mode .nav-item.active {
+  background-color: #0f0f12;
+  color: #ffffff;
+}
+
+body.dark-mode .user-info {
+  background-color: #17191a;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar .logo-container,
+body.dark-mode .navbar1 {
+  background-color: #17191a;
+}
+
+body.dark-mode .nav-button {
+  color: #ffffff;
+}
+
+body.dark-mode .notification-button .notification-badge {
+  background-color: #ff0000;
+}
+
+body.dark-mode .profile-label,
+body.dark-mode .dropdown-icon {
+  color: #ffffff;
+}
+
+/* Add other dark mode styles as needed */
+
+/* Original CSS */
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 230px;
+  background-color: #fff;
+  color: #6f6b6b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  transition: width 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+}
+
+
+.navbar.collapsed {
+  width: 60px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  backdrop-filter: blur(99px);
+}
+
+.logo {
+  width: 80%;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 1.0rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.nav-item {
+  margin-bottom: 15px;
+  cursor: pointer;
+  width: 90%;
+  color: #6f6b6b;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item .icon {
+  margin-right: 10px;
+}
+
+.nav-item:hover {
+  color: #2A3CA3;
+  background-color: #c6d6f7;
+}
+
+.nav-item.active {
+  background-color: #c6d6f7;
+  color: #6f6b6b;
+}
+
+.user-info {
+  margin-top: auto;
+  background-color: #fff;
+  text-align: center;
+}
+
+.user-info p {
+  font-size: 14px;
+}
+
+.email {
+  color: #6f6b6b;
+}
+
+.fullname {
+  color: #6f6b6b;
+}
+
+.logout {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #0000;
+  text-align: center;
+}
+
+.navbar1 {
+  position: fixed;
+  top: 0;
+  left: 230px;
+  width: calc(100% - 230px);
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+
+}
+
+.navbar.collapsed .navbar1 {
+  left: 60px;
+  width: calc(100% - 60px);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+
+}
+
+.nav-left {
+  display: flex;
+  padding-top: 10px;
+  
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.nav-button:focus {
+  outline: none;
+}
+
+.notification-button {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0 5px;
+  font-size: 0.8rem;
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-label {
+  color: black;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.dropdown-icon {
+  color: black;
+  font-size: 0.8rem;
+}
+
+
+.navbar .nav-right .notification-container {
+  position: relative;
+  display: inline-block;
+}
+
+.notifications-box {
+  width: 300px; /* Adjust width as needed */
+  max-height: 300px; /* Fixed height for the notifications box */
+  overflow-y: auto; /* Adds vertical scrollbar if content exceeds the height */
+  background-color: #fff; /* Background color for better visibility */
+  border: 1px solid #ccc; /* Optional: border around the box */
+  border-radius: 4px; /* Optional: rounded corners */
+  padding: 10px; /* Optional: padding inside the box */
+  position: absolute; /* Ensure it positions correctly */
+  right: 0; /* Align it to the right */
+  top: 50px; /* Adjust based on the navbar height */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+.notifications-box.dark-mode {
+  width: 300px; /* Adjust width as needed */
+  max-height: 300px; /* Fixed height for the notifications box */
+  overflow-y: auto; /* Adds vertical scrollbar if content exceeds the height */
+  background-color: #17191a; /* Background color for better visibility */
+  border: 1px solid #ccc; /* Optional: border around the box */
+  color: #fff;
+  border-radius: 4px; /* Optional: rounded corners */
+  padding: 10px; /* Optional: padding inside the box */
+  position: absolute; /* Ensure it positions correctly */
+  right: 0; /* Align it to the right */
+  top: 50px; /* Adjust based on the navbar height */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.notifications-box h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.notifications-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.notifications-box.dark-mode ul li p {
+  color: white ;
+}
+.notifications-box li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  
+}
+
+.notifications-box li:last-child {
+  border-bottom: none;
+  
+}
+
+.notification-badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.ul{
+  background-color: #0f0f12;
+} 
+
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  width: 120px;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.dropdown-item.dark-mode{
+  color: white;
+}
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dark-mode .dropdown-menu {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+
+.dark-mode .dropdown-item:hover {
+  background-color: #555;
+}

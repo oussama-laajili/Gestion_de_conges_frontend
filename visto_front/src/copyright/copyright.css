@@ -1,0 +1,7 @@
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+}
+.copyright a {
+    color: var(--color-primary);
+}

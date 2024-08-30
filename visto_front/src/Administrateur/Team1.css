@@ -1,0 +1,261 @@
+.team-container {
+  left: 230px;
+  top: 60px;
+  position: fixed;
+  width: 84.5%;
+  padding-left: 15px;
+  background-color: #fff;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Adjust shadow as needed */
+
+}
+.team-container.collapsed {
+  left: 60px; /* Adjust left position for collapsed state */
+  width: calc(100% - 60px); /* Adjust width for remaining space in collapsed state */
+}
+
+
+
+.table-wrapper {
+  max-height: 525px; /* Set a max height for vertical scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+.table-wrapper1 {
+  max-height: 400px; /* Set a max height for vertical scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  margin-bottom: 1%;
+}
+.employee-table {
+  width: 100%; /* Ensure the table takes full width within its container */
+  table-layout: fixed; /* Makes sure columns don't collapse */
+}
+
+.employee-table th, .employee-table td {
+  white-space: nowrap; /* Prevents text from wrapping inside cells */
+}
+
+
+
+
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.search-input.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.filter-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative; /* Needed for positioning options box */
+}
+
+.filter-button.dark-mode {
+  color: #fff;
+}
+
+.options-box {
+  position: absolute;
+  top: 35px;
+  margin-right: 1.8%;
+  right: 0; /* Align options box with the filter button */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.options-box.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.options-box div {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.options-box div:hover {
+  background-color: #f0f0f0;
+}
+
+.options-box.dark-mode div:hover {
+  background-color: #444;
+}
+.employee-table {
+  width: 98.5%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Add border around the table */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the table */
+}
+
+.employee-table th,
+.employee-table td {
+  border-top: 1px solid #ddd; /* Horizontal border at the top */
+  border-bottom: 1px solid #ddd; /* Horizontal border at the bottom */
+  padding: 8px;
+  text-align: center; /* Center content */
+}
+
+/* Remove vertical borders for table headers and cells */
+.employee-table th:first-child,
+.employee-table td:first-child {
+  border-left: none; /* Remove left border */
+}
+
+.employee-table th:last-child,
+.employee-table td:last-child {
+  border-right: none; /* Remove right border */
+}
+
+/* Optional: If you want to remove all vertical borders */
+.employee-table th,
+.employee-table td {
+  border-left: none;
+  border-right: none;
+}
+
+/* Center the image within the cell */
+.employee-table .employee-photo {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Style for table headers */
+.employee-table th {
+  background-color: #9fbbf1; /* Change header background color */
+}
+
+/* Fixed row height */
+.employee-table td {
+  height: 50px; /* Adjust height as needed */
+}
+
+
+.employee-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.icon-button4{
+  margin-right: 65%;
+  border-radius: 4px;
+
+  width: 50%;
+  background-color: #9fbbf1;
+}
+.icon-button1{
+  margin-right: 25px;
+  margin-left: 35px;
+  cursor: pointer;
+
+}
+
+.icon-button.dark-mode {
+  color: #fff;
+  
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.page-btn {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.plusicon{
+  margin-right: 10px;
+}
+.page-btn.active {
+  background-color: #9fbbf1;
+  color: #fff;
+}
+
+.dark-mode {
+  background-color: #1c1c1c;
+  color: #e5e7e8;
+}
+
+.dark-mode .team-container {
+  background-color: #1c1c1c;
+  color: #e5e7e8;
+}
+
+.dark-mode .employee-table th,
+.dark-mode .employee-table td {
+  border: 1px solid #444;
+}
+
+
+
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2px;
+  padding-right: 1.5%;
+  justify-content: flex-end; /* Align items to the right */
+  padding-bottom: 1.5%;
+  padding-top: 25px;
+}
+
+.search-input {
+  width: 100%; /* Adjusted width */
+  padding: 8px 30px 8px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+
+.search-container input {
+  border: 1px solid #ccc; /* Default border color */
+  padding: 8px 30px 8px 10px; /* Adjust padding to make space for the icon */
+  border-radius: 4px;
+  outline: none; /* Remove default outline */
+  width: 40%; /* Full width of the container */
+}
+
+.search-container input:focus {
+  border: none; /* Remove border on focus */
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow or custom style */
+}
+
+.search-container .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust as needed */
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent clicking the icon */
+  color: #999; /* Icon color */
+}
+
+.search-container button  {
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 8px;
+}
